@@ -13,17 +13,20 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="./css/progress.css" />
-		<link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./css/style.css">
 		<script defer src="script.js"></script>
 	</head>
 	<body>
+
 		<h2 class="heading">Custom Video Player</h2>
+
 		<video
 			src="./videos/gone.mp4"
 			poster="./img/poster.png"
 			id="video"
 			class="screen"
 		></video>
+
         <div class="control">
             <button class="btn" id="play">
                 <i class="fa fa-play fa-2x"></i>
@@ -34,5 +37,6 @@
             <input type="range"  id="progress" class="progress" min="0" max="100" step="0.1" value="0">
             <span class="timespan" id="timespan">00:00</span>
         </div>
+
 	</body>
 </html>
