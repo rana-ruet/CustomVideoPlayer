@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #3b3434;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+}
+
+.screen {
+    cursor: pointer;
+    background: #000 !important;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 50%;
+    height: 70%;
+}
+
+.control{
+    background: #222;
+    color: #fff;
+    width: 50%;
+    padding: 1rem 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    margin-right: 1rem;
+}
+
+.fa-play {
+  color: #28a745;
+  margin-left: .5rem;
+}
+
+.fa-stop {
+  color: #dc3545;
+}
+
+.fa-pause {
+  color: #fff;
+    margin-left: .5rem;
+}
+
+.timespan {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin:0 1rem;
+}
+
+@media  (max-width:60rem) {
+    .screen,
+    .control{
+        width: 75%;
+    }
+}
+@media (max-width:50rem) {
+ .screen{
+     height: 60%;
+ }
+}
